@@ -78,7 +78,7 @@ li {
         .pc_menu .pc_menu_navi .pc_menu_li li img {
           width: 80px;
           height: 12px; } }
-  /* main
+/* main
 ------------------------------------------------------------*/
 @media (max-width: 768px) {
   .pc_titles {
@@ -202,18 +202,17 @@ li {
 
   .pagetop {
     display: block;
-    margin: 20px auto;
-    width: 6rem; }
-
-  .footer_li {
-    margin: 5px 40px;
-    display: float;
-    text-align: center;
-    font-size: 0.9rem; }
-    .footer_li p {
-      display: inline;
-      margin: 0; } }
-@media (min-width: 769px) {
+    margin: 20px auto; }
+    .pagetop .footer_li {
+      list-style: none;
+      margin: 5px 40px;
+      display: float;
+      text-align: center;
+      font-size: 0.9rem; }
+      .pagetop .footer_li p {
+        display: inline;
+        margin: 0; } }
+@media (max-width: 768px) and (min-width: 769px) {
   .pc_titles {
     width: 200px; }
 

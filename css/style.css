@@ -124,7 +124,8 @@ li {
     flex-wrap: wrap; }
     .shopguide h2 {
       font-size: 1.6rem;
-      margin: 0 0 10px 0; }
+      margin: 0 0 10px 0;
+      font-weight: bold; }
     .shopguide .delivery,
     .shopguide .payment {
       width: calc(100% - 40px);
@@ -161,6 +162,27 @@ li {
   #sub_menu {
     margin: 0;
     padding: 0; }
+    #sub_menu .item_search {
+      padding: 20px 0;
+      width: calc(100% - 40px);
+      margin: 10px auto;
+      background-color: #ffffff; }
+      #sub_menu .item_search .itemsearch {
+        display: none; }
+      #sub_menu .item_search .searchform {
+        display: flex;
+        justify-content: center;
+        padding: 0 20px; }
+        #sub_menu .item_search .searchform .searchbox {
+          border: none;
+          width: 100%;
+          height: 1.5rem;
+          background-color: #f9f8f6; }
+        #sub_menu .item_search .searchform .searchicon {
+          display: inline-block;
+          padding: 3px;
+          padding-left: 0;
+          background-color: #f9f8f6; }
     #sub_menu .sub-box {
       background-color: #887f69;
       margin: 10px auto;
@@ -191,28 +213,37 @@ li {
         padding: 0 15px; }
         #sub_menu .shop-boxes .shop-box img,
         #sub_menu .shop-boxes .shop-box p {
-          margin: 10px 5px;
+          margin: 20px 5px 10px 5px;
           width: 50%;
           box-sizing: border-box;
           font-size: 100%; }
       #sub_menu .shop-boxes a img.more {
         display: block;
         margin-left: calc(100% - 120px);
-        padding: 0 10px 15px 0; }
+        padding: 0 10px 10px 0; }
 
   .pagetop {
     display: block;
     margin: 20px auto; }
-    .pagetop .footer_li {
-      list-style: none;
-      margin: 5px 40px;
+
+  footer {
+    padding-bottom: 20px; }
+    footer .footer_li {
+      margin: 5px 40px 10px 40px;
       display: float;
       text-align: center;
       font-size: 0.9rem; }
-      .pagetop .footer_li p {
+      footer .footer_li a {
+        color: #000000;
+        text-decoration: none;
+        font-size: 90%; }
+      footer .footer_li p {
         display: inline;
-        margin: 0; } }
-@media (max-width: 768px) and (min-width: 769px) {
+        margin: 0;
+        font-size: 90%; }
+    footer .copy {
+      margin-left: 20px; } }
+@media (min-width: 769px) {
   .pc_titles {
     width: 200px; }
 

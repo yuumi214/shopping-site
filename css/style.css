@@ -13,6 +13,10 @@ body {
 div {
   margin: 0; }
 
+a {
+  text-decoration: none;
+  color: unset; }
+
 h2 {
   color: #887f69;
   margin-top: 0;
@@ -104,6 +108,18 @@ li img {
     .pgbody .sp_titles {
       display: block;
       margin: 20px auto; }
+    .pgbody .list_items .backnext {
+      display: flex;
+      justify-content: space-between; }
+      .pgbody .list_items .backnext .back, .pgbody .list_items .backnext .next {
+        background-color: #887f69;
+        color: white;
+        width: 120px;
+        height: 40px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-weight: bold; }
     .pgbody .bread_clumb {
       padding: 2px 10px;
       background-color: #e8e4da;
@@ -403,6 +419,19 @@ li img {
       justify-content: center;
       box-sizing: border-box;
       margin-bottom: 60px; }
+      .pgbody .leftbody .list_items .backnext {
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-between; }
+        .pgbody .leftbody .list_items .backnext .back, .pgbody .leftbody .list_items .backnext .next {
+          background-color: #887f69;
+          color: white;
+          width: 120px;
+          height: 40px;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          font-weight: bold; }
       .pgbody .leftbody .bread_clumb {
         padding: 2px 10px;
         background-color: #e8e4da;
@@ -439,7 +468,7 @@ li img {
             border: 1px solid #887f69;
             padding-left: 10px; }
         .pgbody .leftbody #product .product_content {
-          padding: 40px 60px 60px; }
+          padding: 40px 40px 60px; }
         .pgbody .leftbody #product .cover2 {
           display: flex;
           align-items: center;
@@ -576,8 +605,8 @@ li img {
             .pgbody .leftbody .shopguide .payment ul li:before {
               content: '';
               list-style-type: square;
-              width: 0.6rem;
-              height: 0.6rem;
+              width: 0.7rem;
+              height: 0.7rem;
               display: inline-block;
               background: #887f69;
               margin-right: 5px; }

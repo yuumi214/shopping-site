@@ -56,7 +56,10 @@ body {
 div {
   margin: 0;
 }
-
+a{
+  text-decoration: none;
+  color: unset;
+}
 h2 {
   color: $fontColor;
   margin-top: 0;
@@ -190,6 +193,22 @@ li img {
       display: block;
       margin: 20px auto;
     }
+          .list_items{
+        .backnext{
+          display: flex;
+          justify-content: space-between;
+          .back,.next{
+          background-color: $fontColor;
+          color: white;
+          width: 120px;
+          height: 40px;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          font-weight: bold;
+          }
+        }
+      }
     .bread_clumb {
       padding: 2px 10px;
       background-color: #e8e4da;
@@ -560,6 +579,23 @@ li img {
       justify-content: center;
       box-sizing: border-box;
       margin-bottom: 60px;
+      .list_items{
+        .backnext{
+          margin-top: 25px;
+          display: flex;
+          justify-content: space-between;
+          .back,.next{
+          background-color: $fontColor;
+          color: white;
+          width: 120px;
+          height: 40px;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          font-weight: bold;
+          }
+        }
+      }
       .bread_clumb {
         padding: 2px 10px;
         background-color: #e8e4da;
@@ -605,7 +641,7 @@ li img {
           }
         }
         .product_content {
-          padding: 40px 60px 60px;
+          padding: 40px 40px 60px;
 
         }
         .cover2 {
@@ -783,8 +819,8 @@ li img {
             li:before {
               content: '';
               list-style-type: square;
-              width: 0.6rem;
-              height: 0.6rem;
+              width: 0.7rem;
+              height: 0.7rem;
               display: inline-block;
               background: $fontColor;
               margin-right: 5px;

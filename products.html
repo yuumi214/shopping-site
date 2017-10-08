@@ -64,21 +64,28 @@
                         <li class="categoryname">
                             <p>カテゴリ名</p>
                         </li>
+                         <li class="slash">
+                            <p>/</p>
+                        </li>
+                        <li class="categoryname">
+                            <p>商品名</p>
+                        </li>
+                            
                     </ul>
                 </div>
                 <section id="product">
                     <div class="product_content">
                         <div class="cover">
                             <div class="cover2">
-                            <p class="productname">商品名が入ります</p>
-                            <p class="prodcode">fa0001-00</p>
+                                <p class="productname">商品名が入ります</p>
+                                <p class="prodcode">fa0001-00</p>
                             </div>
                             <div id="productlist">
-                                <div id="mainimg">
+                                <div id="mainimg" class="jqmain">
                                     <img class="main_img" src="images/products/pro_img_01.jpg" alt="main_pro">
                                 </div>
                                 <div id="thumbnails">
-                                    <ul id="listimg">
+                                    <ul id="listimg" class="jqlist">
                                         <li class="thumbnailimg"><img class="thumbimg" src="images/products/pro_img_01.jpg" alt=""></li>
                                         <li class="thumbnailimg"><img class="thumbimg" src="images/products/pro_img_02.jpg" alt=""></li>
                                         <li class="thumbnailimg"><img class="thumbimg" src="images/products/pro_img_03.jpg" alt=""></li>
@@ -95,7 +102,9 @@
                         </div>
                         <div class="detail_list">
                             <div class="color">
-                                <img class="pro_title" src="images/products/title_color.png" alt="color/size">
+                                <div class="pro_title">
+                                    <img class="pro_title_color" src="images/products/title_color.png" alt="color/size">
+                                </div>
                                 <table>
                                     <tbody>
                                         <tr style="background-color:#e8e4da">
@@ -113,10 +122,12 @@
                             </div>
                             <div class="price">
                                 <div class="pricered">
-                                <img class="pro_title" src="images/products/title_price.png" alt="price">
+                                    <img class="pro_title" src="images/products/title_price.png" alt="price">
+                                    <div>
                                     <h3 class="yen">¥</h3>
                                     <h3 class="1000">1,000</h3>
                                     <p>(tax in)</p>
+                                    </div>
                                 </div>
                                 <div class="add_to_cart">
                                     <img src="images/products/add_to_cart.png" alt="cart">
@@ -126,7 +137,7 @@
                                 <img class="pro_title" src="images/products/title_quantity.png" alt="quantity">
                                 <input type="text" placeholder="">
                             </div>
-                            <div>
+                            <div class="prod_detail">
                                 <div class="pro_info">
                                     <h2>商品説明</h2>
                                 </div>
@@ -136,14 +147,14 @@
                                     </li>
                                     <li>説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト</li>
                                 </ul>
-                                <table>
+                                <table >
                                     <tbody>
                                         <tr class="color_info">
-                                            <th>カラー</th>
+                                            <th style="background-color:#e8e4da">カラー</th>
                                             <td>説明文が入ります説明文が入ります説明文が入ります</td>
                                         </tr>
                                         <tr class="size_info">
-                                            <th>サイズ</th>
+                                            <th style="background-color:#e8e4da">サイズ</th>
                                             <td>説明文が入ります説明文が入ります説明文が入ります</td>
                                         </tr>
                                     </tbody>
@@ -152,7 +163,6 @@
                         </div>
                     </div>
                 </section>
-
                 <section id="recent_items">
                     <img class="sp_titles" src="images/list/title_recent_pro.png" alt="recent_items" srcset="images/list/title_recent_pro@2x.png 2x" />
                     <img class="pc_titles" src="images/list/recent_pro_pc.png" alt="recent_items">
@@ -212,7 +222,7 @@
                 <div class="item_search" id="item_search2">
                     <img class="itemsearch" src="images/top/itemsearch.png" alt="item_search">
                     <form class=searchform>
-                        <input class="searchbox" type="text" placeholder="search...">
+                        <input class="searchbox" type="text" placeholder="  search...">
                         <input class="searchicon" type="image" src="./images/top/search_icon.png">
                     </form>
                 </div>
@@ -222,9 +232,9 @@
                 </div>
                 <div class="sub-box" id="categories">
                     <img class="sub_item" src="images/top/categories.png" alt="categories_title">
-                    <img class="down" src="images/top/down_icon.png" alt="downicon">
+                    <img class="down" id="jqbutton" src="images/top/down_icon.png" alt="downicon">
                 </div>
-                <ul class="category_name">
+                 <ul class="category_name" id="jqcategorytoggle">
                     <li>カテゴリー名<img class="next-g" src="images/top/next_icon_gray.png" alt="nexticon"></li>
                     <li>カテゴリー名<img class="next-g" src="images/top/next_icon_gray.png" alt="nexticon"></li>
                     <li>カテゴリー名<img class="next-g" src="images/top/next_icon_gray.png" alt="nexticon"></li>
@@ -288,11 +298,16 @@
 
             //img switch (click)
             $(window).load(function() {
-                $("#listimg img").click(function() {
+                $(".jqlist img").click(function() {
                     var img_src = $(this).attr("src");
-                    $("#mainimg img").attr("src", img_src);
+                    $(".jqmain img").attr("src", img_src);
                 });
             });
+                        $(document).ready(function() {
+                $("#jqbutton").click(function() {
+                    $("#jqcategorytoggle").slideToggle();
+                });
+                         });
         </script>
     </div>
 

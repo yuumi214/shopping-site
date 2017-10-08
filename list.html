@@ -182,7 +182,7 @@
                 <div class="item_search" id="item_search2">
                     <img class="itemsearch" src="images/top/itemsearch.png" alt="item_search">
                     <form class=searchform>
-                        <input class="searchbox" type="text" placeholder="search...">
+                        <input class="searchbox" type="text" placeholder="  search...">
                         <input class="searchicon" type="image" src="./images/top/search_icon.png">
                     </form>
                 </div>
@@ -192,9 +192,9 @@
                 </div>
                 <div class="sub-box" id="categories">
                     <img class="sub_item" src="images/top/categories.png" alt="categories_title">
-                    <img class="down" src="images/top/down_icon.png" alt="downicon">
+                    <img class="down" id="jqbutton" src="images/top/down_icon.png" alt="downicon">
                 </div>
-                <ul class="category_name">
+                <ul class="category_name" id="jqcategorytoggle">
                     <li>カテゴリー名<img class="next-g" src="images/top/next_icon_gray.png" alt="nexticon"></li>
                     <li>カテゴリー名<img class="next-g" src="images/top/next_icon_gray.png" alt="nexticon"></li>
                     <li>カテゴリー名<img class="next-g" src="images/top/next_icon_gray.png" alt="nexticon"></li>
@@ -252,6 +252,11 @@
             $(document).ready(function() {
                 $("#sp_menu_img").click(function() {
                     $(".sp_menu_toggle").slideToggle();
+                });
+            });
+             $(document).ready(function() {
+                $("#jqbutton").click(function() {
+                    $("#jqcategorytoggle").slideToggle();
                 });
             });
         </script>

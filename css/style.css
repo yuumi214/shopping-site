@@ -8,7 +8,7 @@ HTML {
 
 body {
   margin: 0;
-  font-size: 14px; }
+  font-size: 12px; }
 
 div {
   margin: 0; }
@@ -24,8 +24,9 @@ h2 {
 
 h3 {
   color: #e80f66;
-  font-size: 25px;
-  font-style: italic; }
+  font-size: 30px;
+  font-style: italic;
+  font-weight: unset; }
 
 li {
   list-style: none; }
@@ -146,6 +147,7 @@ li img {
     .pgbody .catgrimgpc {
       display: none; }
     .pgbody #product {
+      padding: 0 10px;
       margin: 15px 0;
       background-color: #ffffff; }
       .pgbody #product table {
@@ -214,11 +216,12 @@ li img {
             width: 100%; }
             .pgbody #product .detail_list .price .pricered div {
               display: flex;
-              align-items: center;
+              align-items: baseline;
               margin: 0 auto; }
               .pgbody #product .detail_list .price .pricered div .yen {
-                font-size: 14px; }
+                font-size: 20px; }
               .pgbody #product .detail_list .price .pricered div p {
+                font-size: 15px;
                 margin-left: 5px; }
           .pgbody #product .detail_list .price .add_to_cart {
             text-align: center; }
@@ -311,7 +314,8 @@ li img {
             color: black;
             font-style: none;
             margin: 5px 0;
-            font-weight: unset; }
+            font-weight: unset;
+            font-size: 12px; }
           .pgbody .shopguide .delivery ul .card,
           .pgbody .shopguide .payment ul .card {
             display: block;
@@ -539,12 +543,12 @@ li img {
               margin-right: 30px; }
               .pgbody .leftbody #product .detail_list .price .pricered div {
                 display: flex;
-                align-items: center;
+                align-items: baseline;
                 margin: 0 auto; }
                 .pgbody .leftbody #product .detail_list .price .pricered div .yen {
-                  font-size: 14px; }
+                  font-size: 20px; }
                 .pgbody .leftbody #product .detail_list .price .pricered div p {
-                  font-size: 10px;
+                  font-size: 15px;
                   font-style: italic;
                   margin-left: 5px; }
           .pgbody .leftbody #product .detail_list .quantity {
@@ -635,7 +639,8 @@ li img {
               color: black;
               font-style: none;
               margin: 5px 0;
-              font-weight: unset; }
+              font-weight: unset;
+              font-size: 12px; }
             .pgbody .leftbody .shopguide .delivery ul .card,
             .pgbody .leftbody .shopguide .payment ul .card {
               display: block;

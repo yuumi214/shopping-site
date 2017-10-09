@@ -50,7 +50,7 @@ HTML {
 
 body {
   margin: 0;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 div {
@@ -68,8 +68,9 @@ h2 {
 
 h3 {
   color: #e80f66;
-  font-size: 25px;
+  font-size: 30px;
   font-style: italic;
+  font-weight: unset;
 }
 
 //font
@@ -242,6 +243,7 @@ li img {
       display: none;
     }
     #product {
+      padding:0 10px;
       margin: 15px 0;
       background-color: $subColor;
       table {
@@ -331,12 +333,13 @@ li img {
             width: 100%;
             div {
               display: flex;
-              align-items: center;
+              align-items: baseline;
               margin: 0 auto;
               .yen {
-                font-size: 14px;
+                font-size: 20px;
               }
               p {
+                font-size: 15px;
                 margin-left: 5px;
               }
             }
@@ -454,6 +457,7 @@ li img {
               font-style: none;
               margin: 5px 0;
               font-weight:unset;
+              font-size: 12px;
             }
           .card {
             display: block;
@@ -733,13 +737,13 @@ li img {
               margin-right: 30px;
               div {
                 display: flex;
-                align-items: center;
+                align-items: baseline;
                 margin: 0 auto;
                 .yen {
-                  font-size: 14px;
+                  font-size: 20px;
                 }
                 p {
-                  font-size:10px;
+                  font-size:15px;
                   font-style:italic;
                   margin-left: 5px;
                 }
@@ -853,6 +857,7 @@ li img {
               font-style: none;
               margin: 5px 0;
               font-weight:unset;
+              font-size:12px;
             }
             .card {
               display: block;

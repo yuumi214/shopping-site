@@ -23,8 +23,8 @@ h2 {
   font-size: 12px; }
 
 h3 {
-  color: red;
-  font-size: 20px;
+  color: #e80f66;
+  font-size: 25px;
   font-style: italic; }
 
 li {
@@ -130,8 +130,10 @@ li img {
         padding: 0;
         margin: 0; }
         .pgbody .bread_clumb .breadclumb li {
-          padding: 0 3px; }
-        .pgbody .bread_clumb .breadclumb p {
+          padding: 0 3px;
+          font-size: 10px;
+          color: #887f69; }
+        .pgbody .bread_clumb .breadclumb a {
           margin: 0;
           padding: 0;
           font-size: 10px;
@@ -289,8 +291,8 @@ li img {
         .pgbody .shopguide .delivery ul,
         .pgbody .shopguide .payment ul {
           padding: 0; }
-          .pgbody .shopguide .delivery ul li:before,
-          .pgbody .shopguide .payment ul li:before {
+          .pgbody .shopguide .delivery ul li.withdot:before,
+          .pgbody .shopguide .payment ul li.withdot:before {
             content: '';
             list-style-type: square;
             width: 0.7rem;
@@ -303,9 +305,13 @@ li img {
             margin-top: 15px;
             color: #887f69;
             font-weight: bold; }
-          .pgbody .shopguide .delivery ul p,
-          .pgbody .shopguide .payment ul p {
-            margin: 5px 0; }
+          .pgbody .shopguide .delivery ul .nodot,
+          .pgbody .shopguide .payment ul .nodot {
+            list-style: none;
+            color: black;
+            font-style: none;
+            margin: 5px 0;
+            font-weight: unset; }
           .pgbody .shopguide .delivery ul .card,
           .pgbody .shopguide .payment ul .card {
             display: block;
@@ -443,8 +449,10 @@ li img {
           padding: 0;
           margin: 0; }
           .pgbody .leftbody .bread_clumb .breadclumb li {
-            padding: 0 3px; }
-          .pgbody .leftbody .bread_clumb .breadclumb p {
+            padding: 0 3px;
+            font-size: 10px;
+            color: #887f69; }
+          .pgbody .leftbody .bread_clumb .breadclumb a {
             margin: 0;
             padding: 0;
             font-size: 10px;
@@ -536,6 +544,8 @@ li img {
                 .pgbody .leftbody #product .detail_list .price .pricered div .yen {
                   font-size: 14px; }
                 .pgbody .leftbody #product .detail_list .price .pricered div p {
+                  font-size: 10px;
+                  font-style: italic;
                   margin-left: 5px; }
           .pgbody .leftbody #product .detail_list .quantity {
             display: flex;
@@ -594,7 +604,8 @@ li img {
         justify-content: space-between;
         margin: 10px auto; }
         .pgbody .leftbody .shopguide h2 {
-          font-weight: bold; }
+          font-weight: bold;
+          font-size: 17px; }
         .pgbody .leftbody .shopguide .delivery,
         .pgbody .leftbody .shopguide .payment {
           width: calc((100% - 125px) / 2);
@@ -604,8 +615,8 @@ li img {
           .pgbody .leftbody .shopguide .delivery ul,
           .pgbody .leftbody .shopguide .payment ul {
             padding: 0; }
-            .pgbody .leftbody .shopguide .delivery ul li:before,
-            .pgbody .leftbody .shopguide .payment ul li:before {
+            .pgbody .leftbody .shopguide .delivery ul li.withdot:before,
+            .pgbody .leftbody .shopguide .payment ul li.withdot:before {
               content: '';
               list-style-type: square;
               width: 0.7rem;
@@ -618,9 +629,13 @@ li img {
               margin-top: 15px;
               color: #887f69;
               font-weight: bold; }
-            .pgbody .leftbody .shopguide .delivery ul p,
-            .pgbody .leftbody .shopguide .payment ul p {
-              margin: 5px 0; }
+            .pgbody .leftbody .shopguide .delivery ul .nodot,
+            .pgbody .leftbody .shopguide .payment ul .nodot {
+              list-style: none;
+              color: black;
+              font-style: none;
+              margin: 5px 0;
+              font-weight: unset; }
             .pgbody .leftbody .shopguide .delivery ul .card,
             .pgbody .leftbody .shopguide .payment ul .card {
               display: block;

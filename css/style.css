@@ -112,7 +112,8 @@ li img {
     .pgbody .list_items .backnext {
       display: flex;
       justify-content: space-between; }
-      .pgbody .list_items .backnext .back, .pgbody .list_items .backnext .next {
+      .pgbody .list_items .backnext .back,
+      .pgbody .list_items .backnext .next {
         background-color: #887f69;
         color: white;
         width: 120px;
@@ -291,6 +292,13 @@ li img {
         margin: 3px 0;
         padding: 20px 25px;
         background-color: #ffffff; }
+        .pgbody .shopguide .delivery .card,
+        .pgbody .shopguide .payment .card {
+          display: block;
+          margin: 10px 0;
+          text-align: center;
+          width: 105%;
+          max-width: 400px; }
         .pgbody .shopguide .delivery ul,
         .pgbody .shopguide .payment ul {
           padding: 0; }
@@ -316,13 +324,6 @@ li img {
             margin: 5px 0;
             font-weight: unset;
             font-size: 12px; }
-          .pgbody .shopguide .delivery ul .card,
-          .pgbody .shopguide .payment ul .card {
-            display: block;
-            margin: 10px 0;
-            text-align: center;
-            width: 105%;
-            max-width: 400px; }
     .pgbody #sub_menu {
       margin: 0;
       padding: 0; }
@@ -434,7 +435,8 @@ li img {
         margin-top: 25px;
         display: flex;
         justify-content: space-between; }
-        .pgbody .leftbody .list_items .backnext .back, .pgbody .leftbody .list_items .backnext .next {
+        .pgbody .leftbody .list_items .backnext .back,
+        .pgbody .leftbody .list_items .backnext .next {
           background-color: #887f69;
           color: white;
           width: 120px;
@@ -616,6 +618,13 @@ li img {
           margin: 5px 0;
           padding: 15px 30px;
           background-color: #ffffff; }
+          .pgbody .leftbody .shopguide .delivery .card,
+          .pgbody .leftbody .shopguide .payment .card {
+            display: block;
+            margin: 10px 0;
+            text-align: center;
+            width: 100%;
+            max-width: 400px; }
           .pgbody .leftbody .shopguide .delivery ul,
           .pgbody .leftbody .shopguide .payment ul {
             padding: 0; }
@@ -641,13 +650,6 @@ li img {
               margin: 5px 0;
               font-weight: unset;
               font-size: 12px; }
-            .pgbody .leftbody .shopguide .delivery ul .card,
-            .pgbody .leftbody .shopguide .payment ul .card {
-              display: block;
-              margin: 10px 0;
-              text-align: center;
-              width: 100%;
-              max-width: 400px; }
       .pgbody .leftbody .pc_titles {
         margin: 20px 0;
         width: 100%; }
